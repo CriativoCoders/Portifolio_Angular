@@ -1,0 +1,25 @@
+<section class="projetos">
+  <div class="container">
+    <h2 class="titulo-secao">Meus Projetos</h2>
+    <p class="subtitulo">Alguns trabalhos que desenvolvi</p>
+    
+    <div class="grid-projetos">
+      <div class="card-projeto" *ngFor="let projeto of projetos">
+        <div class="card-conteudo">
+          <h3>{{ projeto.titulo }}</h3>
+          <p>{{ projeto.descricao }}</p>
+          
+          <div class="tecnologias">
+            <span class="tag" *ngFor="let tech of projeto.tecnologias">
+              {{ tech }}
+            </span>
+          </div>
+          
+          <a [href]="projeto.link" target="_blank" class="btn-ver-projeto">
+            Ver Projeto
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

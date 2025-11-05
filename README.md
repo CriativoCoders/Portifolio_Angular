@@ -1,6 +1,5 @@
 # Portfolio
-
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
+<p>Bem vindo ao meu portifolio em Angular</p>
 
 ## Development server
 

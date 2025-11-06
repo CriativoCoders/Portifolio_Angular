@@ -1,0 +1,15 @@
+footer {
+  background-color: #0a0a0a;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.container p {
+  color: #888;
+  margin: 0.5rem 0;
+}
+
+.mensagem {
+  color: #00d4ff;
+}

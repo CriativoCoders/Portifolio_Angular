@@ -1,1 +1,87 @@
-<p>contato works!</p>
+<section class="contato">
+  <div class="container">
+    <h2 class="titulo-secao">Entre em Contato</h2>
+    <p class="subtitulo">Vamos conversar sobre seu próximo projeto</p>
+    
+    <div class="conteudo-contato">
+      <div class="info-contato">
+        <h3>Informações</h3>
+        <div class="item-info">
+          <span class="icone">📧</span>
+          <div>
+            <h4>Email</h4>
+            <p>talitalobato1212@gmail.com</p>
+          </div>
+        </div>
+        <div class="item-info">
+          <span class="icone">📱</span>
+          <div>
+            <h4>Telefone</h4>
+            <p>(19) 987642196</p>
+          </div>
+        </div>
+        <div class="item-info">
+          <span class="icone">📍</span>
+          <div>
+            <h4>Localização</h4>
+            <p>Campinas-SP, Brasil</p>
+          </div>
+        </div>
+        
+        <div class="redes-sociais">
+          <h4>Redes Sociais</h4>
+          <div class="links-sociais">
+            <a href="https://github.com/CriativoCoders" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/talita-cristina-538346317/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      
+      <form class="formulario" (ngSubmit)="enviarMensagem()" #contatoForm="ngForm">
+        <div class="form-grupo">
+          <label for="nome">Nome</label>
+          <input 
+            type="text" 
+            id="nome" 
+            name="nome"
+            [(ngModel)]="contato.nome" 
+            required
+            placeholder="Seu nome completo">
+        </div>
+        
+        <div class="form-grupo">
+          <label for="email">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email"
+            [(ngModel)]="contato.email" 
+            required
+            placeholder="seu@email.com">
+        </div>
+        
+        <div class="form-grupo">
+          <label for="mensagem">Mensagem</label>
+          <textarea 
+            id="mensagem" 
+            name="mensagem"
+            [(ngModel)]="contato.mensagem" 
+            required
+            rows="5"
+            placeholder="Sua mensagem aqui..."></textarea>
+        </div>
+        
+        <button 
+          type="submit" 
+          class="btn-enviar"
+          [disabled]="!contatoForm.valid">
+          Enviar Mensagem
+        </button>
+        
+        <div class="mensagem-sucesso" *ngIf="mensagemEnviada">
+          ✓ Mensagem enviada com sucesso!
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

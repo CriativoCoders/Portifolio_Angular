@@ -11,23 +11,17 @@ import { CommonModule } from '@angular/common';
 export class Projetos {
   projetos = [
     {
-      titulo: 'E-commerce Angular',
-      descricao: 'Plataforma de vendas online com carrinho de compras e pagamento integrado.',
-      tecnologias: ['Angular', 'TypeScript', 'Firebase'],
-      link: 'https://github.com/seu-usuario/projeto1'
+      titulo: 'E-commerce PCs',
+      descricao: 'Plataforma de vendas online com carrinho de compras e pagamento integrado com javaScript html e css',
+      tecnologias: ['JavaScript', 'HTML', 'CSS'],
+      link: 'https://github.com/CriativoCoders/e-commerce_PC'
     },
     {
-      titulo: 'App de Tarefas',
-      descricao: 'Aplicativo para gerenciar tarefas diárias com autenticação de usuários.',
-      tecnologias: ['Angular', 'Node.js', 'MongoDB'],
-      link: 'https://github.com/seu-usuario/projeto2'
+      titulo: 'Projeto Canil com Node.js',
+      descricao: 'Site para gerenciar pets em um canil utilizando Node.js',
+      tecnologias: ['TypeScript', 'Node.js'],
+      link: 'https://github.com/CriativoCoders/ProjetoCanil'
     },
-    {
-      titulo: 'Dashboard Analytics',
-      descricao: 'Dashboard interativo com gráficos e visualização de dados em tempo real.',
-      tecnologias: ['Angular', 'Chart.js', 'API REST'],
-      link: 'https://github.com/seu-usuario/projeto3'
-    }
   ];
 
 }

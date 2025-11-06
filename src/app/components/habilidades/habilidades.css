@@ -1,0 +1,69 @@
+.habilidades {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo-secao {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.grid-habilidades {
+  display: grid;
+  gap: 2rem;
+}
+
+.habilidade-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.habilidade-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.nome {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.porcentagem {
+  color: #00d4ff;
+  font-weight: bold;
+}
+
+.barra-progresso {
+  width: 100%;
+  height: 10px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progresso {
+  height: 100%;
+  background: linear-gradient(90deg, #00d4ff, #667eea);
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+

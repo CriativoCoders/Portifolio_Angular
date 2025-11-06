@@ -1,1 +1,18 @@
-<p>habilidades works!</p>
+<section class="habilidades">
+  <div class="container">
+    <h2 class="titulo-secao">Minhas Habilidades</h2>
+    <p class="subtitulo">Tecnologias que domino</p>
+    
+    <div class="grid-habilidades">
+      <div class="habilidade-item" *ngFor="let habilidade of habilidades">
+        <div class="habilidade-info">
+          <span class="nome">{{ habilidade.nome }}</span>
+          <span class="porcentagem">{{ habilidade.nivel }}%</span>
+        </div>
+        <div class="barra-progresso">
+          <div class="progresso" [style.width.%]="habilidade.nivel"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
